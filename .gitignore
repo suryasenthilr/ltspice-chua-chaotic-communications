@@ -1,0 +1,14 @@
+# LTspice simulation output files
+*.raw
+*.log
+*.net
+*.op.raw
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS generated files
+Thumbs.db
+.DS_Store
+Desktop.ini
