@@ -1,16 +1,10 @@
-# Deterministic Chaos, Strange Attractors & Secure Analog Cryptography in LTspice
-
-[![LTspice](https://img.shields.io/badge/Simulator-LTspice%2024%20%2F%20XVII-005696.svg)](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
-[![Silicon Model](https://img.shields.io/badge/Silicon-Analog%20Devices%20AD712-orange.svg)](https://www.analog.com/en/products/ad712.html)
-[![Nonlinear Dynamics](https://img.shields.io/badge/Theory-Chua%20Attractor%20%26%20Bifurcations-blueviolet.svg)](#)
-[![Cryptography](https://img.shields.io/badge/Application-Pecora--Carroll%20Chaos%20Masking-success.svg)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+# Deterministic Chaos, Strange Attractors & Secure Analog Communications in LTspice
 
 An advanced graduate-level exploration of **3rd-order autonomous nonlinear dynamical systems**, phase-space state trajectories, sensitive dependence on initial conditions (the Lyapunov "Butterfly Effect"), and **Pecora-Carroll chaos synchronization for analog secure communications**.
 
 ---
 
-## 🖥️ Live LTspice Schematics
+## Live LTspice Schematics
 
 ### 1. The Autonomous Chua Chaotic Oscillator Schematic
 Synthesizes deterministic chaos using an $LC$ resonant tank ($10\,\text{nF}$, $100\,\text{nF}$, $18\,\text{mH}$), a tuning potentiometer ($R_{\text{pot}} = 1.75\,\text{k}\Omega$), and a dual op-amp nonlinear negative-resistance converter (Analog Devices AD712).
@@ -30,7 +24,7 @@ A full hardware-level cryptography system showing the **Transmitter (Master)**, 
 
 ---
 
-## 📸 Simulation & Analytical Results
+## Simulation and Analytical Results
 
 ### 1. The Double-Scroll Strange Attractor (Phase Space $V_{C1}$ vs $V_{C2}$)
 The autonomous circuit enters deterministic chaos, tracing a continuous, non-repeating double-scroll fractal orbit in state space.
@@ -68,7 +62,7 @@ By tuning the potentiometer $R_{\text{pot}}$, the system undergoes a classic per
 
 ---
 
-## 🛠️ Project Architecture & Schematics
+## Project Architecture and Schematics
 
 | File | Type | Description |
 | :--- | :--- | :--- |
@@ -83,7 +77,7 @@ By tuning the potentiometer $R_{\text{pot}}$, the system undergoes a classic per
 
 ---
 
-## 📐 Mathematical Formulation
+## Mathematical Formulation
 
 ### 1. Differential State Equations
 The circuit is modeled by three coupled nonlinear ordinary differential equations:
@@ -122,7 +116,7 @@ $$m_{\text{rec}}(t) = S(t) - v_{C1r}(t) \approx m(t)$$
 
 ---
 
-## 🎓 Professor Defense & Technical FAQ
+## Technical FAQ and Theoretical Defense
 
 **Q1: Why choose the AD712 op-amp over general-purpose op-amps like the LM741?**  
 > *"The AD712 is a high-speed Dual BiFET op-amp with a $16\,\text{V}/\mu\text{s}$ slew rate and $4\,\text{MHz}$ gain bandwidth. Standard general-purpose op-amps like the LM741 ($0.5\,\text{V}/\mu\text{s}$) introduce heavy phase lags and slew-rate distortion at multi-kilohertz oscillation frequencies, collapsing the chaotic attractor into a trivial limit cycle."*
@@ -135,5 +129,5 @@ $$m_{\text{rec}}(t) = S(t) - v_{C1r}(t) \approx m(t)$$
 
 ---
 
-## 📜 License
+## License
 This project is open-source under the [MIT License](LICENSE).
