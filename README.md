@@ -10,13 +10,33 @@ An advanced graduate-level exploration of **3rd-order autonomous nonlinear dynam
 
 ---
 
-## 📸 Portfolio Visual Highlights
+## 🖥️ Live LTspice Schematics
+
+### 1. The Autonomous Chua Chaotic Oscillator Schematic
+Synthesizes deterministic chaos using an $LC$ resonant tank ($10\,\text{nF}$, $100\,\text{nF}$, $18\,\text{mH}$), a tuning potentiometer ($R_{\text{pot}} = 1.75\,\text{k}\Omega$), and a dual op-amp nonlinear negative-resistance converter (Analog Devices AD712).
+
+<p align="center">
+  <img src="docs/images/01_chua_schematic_ltspice.png" alt="Chua Circuit LTspice Schematic" width="900"/>
+</p>
+
+---
+
+### 2. Pecora-Carroll Synchronized Secure Communications System
+A full hardware-level cryptography system showing the **Transmitter (Master)**, **Chaotic Masking Channel**, and **Synchronized Receiver (Slave)** with subtraction and reconstruction filtering.
+
+<p align="center">
+  <img src="docs/images/03_secure_comm_schematic_ltspice.png" alt="Secure Communications LTspice Schematic" width="900"/>
+</p>
+
+---
+
+## 📸 Simulation & Analytical Results
 
 ### 1. The Double-Scroll Strange Attractor (Phase Space $V_{C1}$ vs $V_{C2}$)
 The autonomous circuit enters deterministic chaos, tracing a continuous, non-repeating double-scroll fractal orbit in state space.
 
 <p align="center">
-  <img src="docs/images/01_double_scroll_attractor.png" alt="Chua Double-Scroll Attractor" width="700"/>
+  <img src="docs/images/01_double_scroll_attractor.png" alt="Chua Double-Scroll Attractor" width="750"/>
 </p>
 
 ---
@@ -25,7 +45,7 @@ The autonomous circuit enters deterministic chaos, tracing a continuous, non-rep
 Two identical AD712 Chua systems simulated in parallel with an initial difference of just **$1\,\mu\text{V}$** ($0.100000\,\text{V}$ vs $0.100001\,\text{V}$). Notice how they track identically for $12\,\text{ms}$, then diverge exponentially into uncorrelated chaos ($\Delta V > 4\,\text{V}$), proving a positive Lyapunov exponent ($\lambda > 0$).
 
 <p align="center">
-  <img src="docs/images/02_butterfly_effect_divergence.png" alt="Butterfly Effect Divergence" width="800"/>
+  <img src="docs/images/02_butterfly_effect_divergence.png" alt="Butterfly Effect Divergence" width="850"/>
 </p>
 
 ---
@@ -34,7 +54,7 @@ Two identical AD712 Chua systems simulated in parallel with an initial differenc
 A $50\,\text{mV}$ audio-frequency sine wave is buried inside a $6.4\,\text{V}_{\text{pk-pk}}$ broadband chaotic carrier ($>30\,\text{dB}$ masking noise). An interceptor on the channel sees only pure random noise. The receiver, synchronized via Pecora-Carroll dynamics, regenerates the carrier, subtracts it, and decrypts the clean message with **$>90\%$ correlation**.
 
 <p align="center">
-  <img src="docs/images/03_chaotic_masking_comms.png" alt="Secure Chaotic Communications" width="800"/>
+  <img src="docs/images/03_chaotic_masking_comms.png" alt="Secure Chaotic Communications" width="850"/>
 </p>
 
 ---
@@ -43,7 +63,7 @@ A $50\,\text{mV}$ audio-frequency sine wave is buried inside a $6.4\,\text{V}_{\
 By tuning the potentiometer $R_{\text{pot}}$, the system undergoes a classic period-doubling bifurcation sequence: **Fixed Point $\to$ Period-1 Limit Cycle $\to$ Period-2 Doubling $\to$ Full Chaos**.
 
 <p align="center">
-  <img src="docs/images/04_bifurcation_cascade.png" alt="Feigenbaum Bifurcation Cascade" width="800"/>
+  <img src="docs/images/04_bifurcation_cascade.png" alt="Feigenbaum Bifurcation Cascade" width="850"/>
 </p>
 
 ---
