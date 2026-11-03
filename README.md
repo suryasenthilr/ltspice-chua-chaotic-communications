@@ -1,6 +1,6 @@
 # Deterministic Chaos, Strange Attractors & Secure Analog Communications in LTspice
 
-An advanced graduate-level exploration of **3rd-order autonomous nonlinear dynamical systems**, phase-space state trajectories, sensitive dependence on initial conditions (the Lyapunov "Butterfly Effect"), and **Pecora-Carroll chaos synchronization for analog secure communications**.
+An exploration of **3rd-order autonomous nonlinear dynamical systems**, phase-space state trajectories, sensitive dependence on initial conditions (the Lyapunov "Butterfly Effect"), and **Pecora-Carroll chaos synchronization for analog secure communications**.
 
 ---
 
